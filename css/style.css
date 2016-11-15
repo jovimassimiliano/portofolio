@@ -1,0 +1,293 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.wrapper{
+    height: 700px;
+}
+
+.orange{
+    color: #F9A828;
+}
+.jumbotron{
+    background-image: url(../img/hello.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+    
+    -webkit-background-position: 0% 25%;
+    -moz-background-position: 0% 25%;
+    -ms-background-position: 0% 25%;
+    -ms-background-position: 0% 25%;
+    background-position: 0% 25%;
+    
+    -webkit-background-size:cover;
+    -moz-background-size: cover;
+    -o-background-size:cover;
+    -ms-background-size:cover;
+    background-size: cover;
+    
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    -ms-background-attachment: fixed;
+    -o-background-attachment: fixed;
+    background-attachment: fixed;
+}
+
+.logo{
+   text-align: center; 
+}
+
+.logo a{
+    padding: 0px 10px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #F9A828;
+    border: 3px solid #F9A828;
+}
+
+.logo a:hover{
+    text-decoration: none;
+}
+
+.navbar ul.list-inline{
+  text-align: center;
+    margin-top: 18px;
+
+}
+
+.navbar ul.list-inline li{
+    font-size: 18px;
+    padding: 0px 20px;
+    
+}
+
+.navbar ul.list-inline li a{
+    color: #F9A828;
+    
+    transition: all 0.1s ease-in-out;
+}
+
+.navbar ul.list-inline li a:hover{
+    text-decoration: none;
+    border-bottom: 1px solid #2E383F;
+}
+
+.jumbotron-text{
+    text-align: center;
+    
+}
+
+.jumbotron-text h1{
+    line-height: 200px;
+}
+
+
+.jumbotron-text p{
+    color: #2E383F;
+    font-size: 700;
+}
+
+.social-icons{
+    text-align: center;
+}
+
+.social-icons .list-inline .list-inline-item i{
+    color: #2E383F;
+    transition: all 0.2s ease-in-out;
+}
+
+.social-icons .list-inline .list-inline-item i.fa-facebook-square:hover{
+    color: rgba(46, 56, 63, 0.7);
+}
+
+.social-icons .list-inline .list-inline-item i.fa-linkedin-square:hover{
+    color: rgba(46, 56, 63, 0.7);
+}
+
+.social-icons .list-inline .list-inline-item i.fa-github-square:hover{
+    color: rgba(46, 56, 63, 0.7);
+}
+
+#portofolio{
+    text-align: center;
+}
+
+.portofolio-item .list-inline{
+    text-align: center;
+    padding: 10px
+}
+
+.thumbnail{
+    width: 300px;
+    height: 270px;
+    
+    
+}
+
+.thumbnail img{
+    width: 300px;
+    height: 260px;
+}
+
+#contact{
+    height: 320px;
+    background-color: #2E383F;
+    color: #F9A828;
+}
+
+#contact form{
+    padding: 20px 0 10px 0;
+}
+
+#contact #subject,#email,#message{
+    border:none;
+    outline: none;
+    background:none;
+    box-shadow: none;
+    border-radius: 0;
+    border-bottom: 1px solid #F9A828;
+    color: #F9A828;
+    
+    
+}
+
+#contact .row .col-md-12{
+    margin-top: 20px;
+}
+
+textarea{
+    resize: none;
+}
+
+#submit-button{
+    margin-top: 10px;
+    width: 100px;
+    height: 50px;
+    font-size: 18px;
+    background-color: transparent;
+    border:1px solid #F9A828;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+#submit-button:hover{
+    background-color: #F9A828;
+    color: #2E383F;
+}
+
+footer{
+    height: 150px;
+    background-color: #F9A828;
+}
+
+footer .social-icons{
+    padding-top: 50px;
+}
+
+footer p{
+    text-align: center;
+}
+
+.back-to-top{
+    background: none;
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    z-index: 100;
+    text-decoration: none;
+    color: grey;
+    display: none;
+}
+
+.back-to-top.selected{
+    color: red;
+}
+
+.back-to-top i{
+    font-size: 60px;
+    
+}
+/*overlay effects*/
+
+.effects{
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+.effects .img{
+    position: relative;
+    float: left;
+    margin-bottom: 60px;
+    width: 33%;
+    
+}
+
+.effects .img:nth-child(n){
+    margin-right: 5px;
+}
+
+.effects .img:first-child{
+    margin-left: -15px;
+}
+
+.effects .img:last-child{
+    margin-right: 0px;
+}
+
+.effects .img img{
+    display: block;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.overlay{
+    display: block;
+    position: absolute;
+    z-index: 20;
+    background: rgba(0,0,0,0.8);
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+a.expand {
+    display: block;
+    position: absolute;
+    z-index: 100;
+/*
+    width: 60px;
+    height: 60px;
+    border: 5px solid #fff;
+*/
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    font-weight: 700;
+/*    border-radius: 30px;*/
+}
+
+#slide-effect .overlay{
+    bottom:0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+}
+
+#slide-effect .overlay a.expand{
+    left: 0;
+    right: 0;
+    bottom: 50%;
+    margin: 0 auto -30px auto;
+    text-decoration: none;
+    color: #fff;
+}
+
+#slide-effect .img.hover .overlay{
+    height: 100%;
+}
